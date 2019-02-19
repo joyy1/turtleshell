@@ -1,0 +1,346 @@
+html{
+  font-size: 18px;
+  background-color: white;
+}
+
+body{
+  background-color: white;
+  font-family: Helvetica;
+  line-height: 1.4;
+}
+
+
+
+
+
+.container{
+  max-width: 960px;
+  margin: auto;
+  height: auto;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+
+}
+
+
+
+
+.main{
+background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+display: block;
+height: 30rem;
+margin:  auto;
+
+
+
+
+}
+
+
+
+
+
+.main .navigation{
+width: 80%;
+background-color: cadetblue;
+display: flex;
+ height: auto;
+justify-content: space-between;
+ align-items: center;
+  font-family: Helvetica;
+  font-size: 1rem;
+  padding: 1rem auto;
+  margin: auto;
+  z-index: 1;
+
+}
+ .navigation .logo{
+  display: inline-flex;
+  width: auto;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1rem;
+  font-family: Helvetica;
+  color: white;
+
+}
+
+
+  .navigation .logo img{
+   display: block;
+  padding-left: 2rem;
+  padding-right: 1rem;
+  height: 1.5rem;
+
+}
+
+ .navigation .logo span{
+  display: flex;
+  width: 10rem;
+  text-align: left;
+  justify-content: flex-start;
+  align-items: center;
+
+
+}
+
+ .navigation .logo .name{
+  color: white;
+font-size: 1rem;
+}
+
+
+  .navigation .general{
+    display: flex;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+justify-content: flex-end;
+  align-items: center;
+  text-align: right;
+
+}
+
+ .navigation .general ul{
+  display: inline-flex;
+}
+
+  .navigation .general li{
+  display: inline-flex;
+  font-size: 1rem;
+  color: white;
+  padding-right: 2rem;
+
+  }
+
+
+
+
+.main .banner{
+    display: inline;
+  width: auto;
+  background-color: white;
+  text-align: center;
+  margin-top: 10rem;
+  margin-right: 3rem;
+  float: right;
+
+
+  }
+
+  .main .banner h1{
+  text-align: center;
+    color: dimgray;
+    font-family: Helvetica;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.2;
+    padding-top: 1.5rem ;
+    padding-bottom: 1.5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+
+
+
+
+  }
+
+
+
+
+
+
+.service{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-content: center;
+  flex-flow: row nowrap;
+  margin: 3rem auto;
+
+}
+
+.one{
+  display: block;
+  height: auto;
+  max-width: 12rem;
+  text-align: center;
+
+}
+
+.one img{
+  display: block;
+  width: 3.5rem;
+  padding-right: 6rem;
+
+
+}
+
+.two{
+  display: block;
+  height: auto;
+  width: auto;
+  text-align: center;
+  max-width: 10rem;
+
+}
+
+.two img{
+  width: 5rem;
+  padding-right: 6rem;
+  display: block;
+  text-align: center;
+
+
+}
+
+.three{
+  max-width: 10rem;
+  display: block;
+  height: auto;
+  width: auto;
+  text-align: center;
+
+}
+.three img{
+  width: 5rem;
+  display: block;
+  text-align: center;
+}
+
+
+
+
+
+ .service h3{
+  color: dimgray;
+  display: inline;
+  padding-top: 0.5rem;
+  text-align: center;
+ align-self: baseline;
+  width: inherit;
+
+}
+
+}
+
+
+.about{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
+  flex-wrap: nowrap;
+  max-height: 8rem;
+  margin-top: 1.5rem;
+
+  }
+
+
+
+.about .phylosophy {
+  width: 35%;
+  display: block;
+  text-align: left;
+  margin-top: 1rem;
+  color: black;
+  margin-right: 5%;
+  align-self: center;
+
+}
+
+
+
+
+.about .phylosophy h3{
+  background-color: cadetblue;
+  width: 10rem;
+  padding-left: 1.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+
+}
+
+.about .phylosophy p{
+  width: inherit;
+  margin-top: 1rem;
+  padding-right: 0.5rem;
+}
+
+
+.about .appointment {
+  width: 35%;
+  display: block;
+  margin-top: 1rem;
+  color: black;
+  align-self: baseline;
+  float: right;
+}
+
+.about .appointment h3{
+  background-color: cadetblue;
+  width: 10rem;
+  padding-left: 1.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+}
+
+
+.appointment p{
+  width: 95%;
+  margin-top: 1rem;
+  padding-right: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer .container{
+    background-color: azure;
+    width: 100%;
+    margin-top: 4rem;
+    align-self: stretch;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+footer .container img{
+    padding: 4rem 1rem 4rem 4rem;
+    height: 1.5rem;
+    }
+
+  footer .container span{
+    display: block;
+    width: auto;
+
+    }
+
+.Copyright{
+      display: inline-flex;
+      color: dimgray;
+
+}

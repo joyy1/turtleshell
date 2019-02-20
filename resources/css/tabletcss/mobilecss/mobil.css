@@ -14,7 +14,7 @@ body{
 
 
 .container{
-  max-width: 960px;
+  max-width: 320px;
   margin: auto;
   height: auto;
   display: flex;
@@ -29,19 +29,22 @@ body{
 .main{
 background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png);
 background-position: center;
-background-size: cover;
+background-size: 20%;
 background-repeat: no-repeat;
 display: block;
-height: 30rem;
+height: 17rem;
 margin:  auto;
 
 }
 
 
 .main .container{
+  width: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  max-width: 128px;
+
 }
 
 
@@ -99,7 +102,8 @@ font-size: 1rem;
 
 
   .navigation .general{
-    display: flex;
+    display: none;
+    width: auto;
   padding-top: 1rem;
   padding-bottom: 1rem;
 justify-content: flex-end;
@@ -120,32 +124,45 @@ justify-content: flex-end;
 
   }
 
-.navigation .special{
-  display: none;
+  .navigation .special{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: auto;
+    padding-right: 2rem;
 
-}
 
-.navigation .special ul{
 
-}
+  }
 
-.navigation .special li{
-  color: white;
-  font-size: 2rem;
+  .navigation .special ul{
 
-}
+  }
+
+  .navigation .special li{
+    color: white;
+    font-size: 2rem;
+
+  }
+
+
+
+
 
 
 .container .banner{
   display: flex;
   justify-content: center;
+  align-items: center;
   float: right;
   width: auto;
+  height: auto;
   background-color: white;
   text-align: center;
-  margin-top: 10rem;
-  margin-right: -2rem;
-  font-size: 2rem;
+  margin-top: 9rem;
+  margin-right: 0;
+  margin-left: 0;
+  font-size: 1rem;
 
 
 
@@ -156,11 +173,11 @@ justify-content: flex-end;
     text-align: center;
     color: dimgray;
     font-family: Helvetica;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: bold;
     line-height: 1.2;
-    padding-top: 1.5rem ;
-    padding-bottom: 1.5rem;
+    padding-top: 1rem ;
+    padding-bottom: 1rem;
     padding-left: 5rem;
     padding-right: 5rem;
 
@@ -172,14 +189,14 @@ justify-content: flex-end;
 
 
 .service .container{
-  width: 100%;
+  width: 20%;
   height: auto;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  flex-flow: row nowrap;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin-top: 3.77rem;
+  margin-bottom: 3.77rem;
 
 
 
@@ -273,21 +290,24 @@ justify-content: flex-end;
   justify-content: center;
   align-items: center;
   flex-flow: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   height: auto;
-  margin-top: 1.5rem;
+
 
   }
 
 
 
-.about .phylosophy {
-  width: 35%;
-  display: block;
+.about .phylosophy, .about .appointment {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   text-align: left;
   margin-top: 1rem;
-  color: black;
   margin-right: 5%;
+  padding-bottom: 4rem;
+  color: black;
   align-self: center;
 
 }
@@ -297,10 +317,11 @@ justify-content: flex-end;
 
 .about .phylosophy h3{
   background-color: cadetblue;
-  max-width: 10rem;
+  display: inline;
+  width: 100%;
   padding-left: 1.25rem;
   padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
   font-weight: bold;
   font-size: 1rem;
   color: white;
@@ -309,14 +330,15 @@ justify-content: flex-end;
 }
 
 .about .phylosophy p{
-  width: 65%;
+  width: 90%;
   margin-top: 1rem;
   padding-right: 0.5rem;
+  text-align: left;
 }
 
 
 .about .appointment {
-  width: 35%;
+  width: 100%;
   display: block;
   margin-top: 1rem;
   color: black;
@@ -326,10 +348,10 @@ justify-content: flex-end;
 
 .about .appointment h3{
   background-color: cadetblue;
-  max-width: 10rem;
+  width: 100%;
   padding-left: 1.25rem;
   padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
   font-weight: bold;
   font-size: 1rem;
   color: white;
@@ -338,7 +360,7 @@ justify-content: flex-end;
 
 
 .appointment p{
-  width: 65%;
+  width: 90%;
   margin-top: 1rem;
   padding-right: 0.5rem;
 }
@@ -358,10 +380,9 @@ justify-content: flex-end;
 footer .container{
     background-color: azure;
     width: 100%;
-    margin-top: 4rem;
-    align-self: stretch;
+    margin: auto;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
   }
 
@@ -371,13 +392,13 @@ footer .container img{
     }
 
   footer .container span{
-    display: block;
+    display: none;
     width: auto;
 
     }
 
 .Copyright{
-      display: inline-flex;
+      display: none;
       color: dimgray;
 
 }

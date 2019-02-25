@@ -36,6 +36,20 @@ height: 30rem;
 margin:  auto;
 
 }
+@media only screen and (max-width: 960px){
+  .main{
+    width: 100%;
+    height: 22rem;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .main{
+    width: 100%;
+    height: 17rem;
+    background-position: 20%;
+  }
+}
 
 
 .main .container{
@@ -62,6 +76,16 @@ margin-top: 1rem;
 
 
 }
+
+@media only screen and (max-width: 960px){
+  .container .navigation{
+    margin-top: 0rem;
+  }
+}
+
+
+
+
  .navigation .logo{
   display: flex;
   width: auto;
@@ -108,6 +132,8 @@ justify-content: flex-end;
 
 }
 
+
+
  .navigation .general ul{
   display: inline-flex;
 }
@@ -124,6 +150,41 @@ justify-content: flex-end;
   display: none;
 
 }
+
+@media only screen and (max-width: 600px){
+  .navigation .general{
+    display: none;
+  }
+
+  .navigation .special{
+    display: flex;
+  }
+
+  .navigation .logo span{
+    display: none;
+  }
+
+  .navigation .logo .name{
+    display: none;
+  }
+
+  .navigation .spacial ul{
+      list-style: none;
+
+}
+
+  .navigation .special li{
+      color: white;
+      font-size: 1rem;
+      padding-right: 1.5rem;
+      font-weight: normal;
+    }
+
+
+  }
+
+
+
 
 .navigation .special ul{
 
@@ -147,10 +208,28 @@ justify-content: flex-end;
   margin-right: -2rem;
   font-size: 2rem;
 
+}
 
+@media only screen and (max-width: 960px){
+   .container .banner{
+     margin-top: 5rem;
+     margin-right: 2rem;
+
+   }
+}
+
+@media only screen and (max-width: 600px){
+  .container .banner{
+    width: 100%;
+    margin-top: 9rem;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
 
 
   }
+}
+
 
   .banner h1{
     text-align: center;
@@ -164,6 +243,25 @@ justify-content: flex-end;
     padding-left: 5rem;
     padding-right: 5rem;
 
+}
+
+@media only screen and (max-width: 960px){
+    .banner h1{
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .banner h1{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+    text-align: center;
+  }
 }
 
 
@@ -182,10 +280,8 @@ justify-content: flex-end;
   margin-bottom: 3rem;
 
 
-
-
-
 }
+
 
 
 
@@ -198,8 +294,6 @@ justify-content: flex-end;
   width: 25%;
   padding-right: 6rem;
   align-self: flex-start;
-
-
 
 
 }
@@ -265,6 +359,34 @@ justify-content: flex-end;
 }
 
 
+@media only screen and (max-width: 600px){
+  .service .container{
+    margin-top: 3.77rem;
+    margin-bottom: 3.77rem;
+    flex-flow: column;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.container  .one, .container .two, .container .three{
+  width: 100%;
+}
+
+
+  .one .title, .two .title{
+    margin-bottom: 1.54rem;
+
+  }
+
+  .one h6, .two h6, .three h6{
+    font-size: 0.77rem;
+  }
+
+}
+
+
 
 
 .about .container{
@@ -281,7 +403,10 @@ justify-content: flex-end;
 
 
 
-.about .phylosophy {
+
+
+
+.container .philosophy{
   width: 35%;
   display: block;
   text-align: left;
@@ -295,9 +420,9 @@ justify-content: flex-end;
 
 
 
-.about .phylosophy h3{
+.container .philosophy h3{
   background-color: cadetblue;
-  max-width: 10rem;
+  width: 10rem;
   padding-left: 1.25rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -308,14 +433,14 @@ justify-content: flex-end;
 
 }
 
-.about .phylosophy p{
+.container .philosophy p{
   width: 65%;
   margin-top: 1rem;
   padding-right: 0.5rem;
 }
 
 
-.about .appointment {
+.container .appointment {
   width: 35%;
   display: block;
   margin-top: 1rem;
@@ -324,9 +449,9 @@ justify-content: flex-end;
   float: right;
 }
 
-.about .appointment h3{
+.container .appointment h3{
   background-color: cadetblue;
-  max-width: 10rem;
+  width: 10rem;
   padding-left: 1.25rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -337,21 +462,59 @@ justify-content: flex-end;
 }
 
 
-.appointment p{
+.container .appointment p{
   width: 65%;
   margin-top: 1rem;
   padding-right: 0.5rem;
 }
 
 
+@media only screen and (max-width: 600px){
+
+  .about .container{
+    flex-flow: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+
+  }
+
+  .container .philosophy, .container .appointment{
+    width: 100%;
+    display: block;
+    text-align: center;
+
+
+
+}
 
 
 
 
+.container .philosophy h3, .container .appointment h3{
+  width: 100%;
+  text-align: center;
+  background-color: cadetblue;
 
 
+}
 
 
+.container .philosophy p, .container .appointment p{
+  font-size: 0.77rem;
+  font-family: Helvetica;
+  padding-bottom: 4rem;
+  padding-top: 1rem;
+  width: 95%;
+  padding-left: 0.5rem;
+  text-align: center;
+
+}
+
+
+}
 
 
 
@@ -370,7 +533,7 @@ footer .container img{
     height: 1.5rem;
     }
 
-  footer .container span{
+footer .container span{
     display: block;
     width: auto;
 
@@ -379,5 +542,23 @@ footer .container img{
 .Copyright{
       display: inline-flex;
       color: dimgray;
+
+}
+
+
+@media only screen and (max-width: 600px){
+
+  footer .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  footer .container span{
+    display: none;
+}
+
+
 
 }
